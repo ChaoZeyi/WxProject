@@ -35,7 +35,7 @@ public class AreaController {
     {
         Map<String, Object> map = new HashMap<>();
         Area area = areaService.getAreaById(areaId);
-        map.put("areabyid", area);
+        map.put("areaByid", area);
         return map;
     }
 
