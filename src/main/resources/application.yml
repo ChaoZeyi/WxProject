@@ -1,0 +1,16 @@
+# 数据源配置,springboot默认读取该配置并初始化，
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/cherry
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  devtools:
+    restart:
+      enabled: true
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
